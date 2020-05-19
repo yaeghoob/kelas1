@@ -5,6 +5,6 @@ from django.http import HttpResponse
 
 def world(request,pageid):
 	if pageid == "0":
-		return HttpResponse("safhe shomare sefr <a href='/'>Home</a>")
+		return HttpResponse("safhe shomare sefr")
 	else:
 		return HttpResponse("404")
