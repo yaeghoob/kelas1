@@ -21,5 +21,8 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('page/<pageid>',views.world)
+    path('/', views.index),
+    path('/about', views.about),
+    path('/pages.', views.pages),
+    path('/page/?P<pageid>',views.page),
 ]
